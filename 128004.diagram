@@ -1,0 +1,25 @@
+format 224
+
+classcanvas 128004 class_ref 128132 // BaseData
+  classdiagramsettings member_max_width 0 end
+  xyz 399 174 2000
+end
+classcanvas 128132 class_ref 128260 // IntData
+  classdiagramsettings member_max_width 0 end
+  xyz 107 77 2000
+end
+classcanvas 128388 class_ref 128516 // DoubleData
+  classdiagramsettings member_max_width 0 end
+  xyz 60 227 2000
+end
+relationcanvas 128260 relation_ref 128004 // <generalisation>
+  from ref 128132 z 2001 to ref 128004
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128516 relation_ref 128132 // <generalisation>
+  from ref 128388 z 2001 to ref 128004
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

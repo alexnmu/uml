@@ -1,0 +1,27 @@
+format 224
+
+componentcanvas 128132 component_ref 134532 // ComponentWriter
+  
+  xyzwh 14 10 2000 159 159
+end
+componentcanvas 128260 component_ref 134660 // ClientWriter
+  
+  xyzwh 353 8 2000 155 157
+end
+arrowjunctioncanvas 128388 class_ref 135556 // StreamBinaryFileWriter
+  xyz 261 114 3005 label_xy 215 133
+arrowjunctioncanvas 128772 class_ref 135428 // StreamConsoleWriter
+  xyz 249 50 3005 label_xy 207 69
+line 128516 ---O
+  from ref 128132 z 3006 to point 168 120
+  line 129156 z 3006 to ref 128388
+line 128644 ---(
+  from ref 128260 z 3006 to point 350 119
+  line 129284 z 3006 to ref 128388
+line 128900 ---O
+  from ref 128132 z 3006 to point 166 59
+  line 129412 z 3006 to ref 128772
+line 129028 ---(
+  from ref 128260 z 3006 to point 352 56
+  line 129540 z 3006 to ref 128772
+end

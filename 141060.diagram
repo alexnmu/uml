@@ -1,0 +1,43 @@
+format 224
+
+classcanvas 128004 class_ref 135044 // IStreamWriter
+  classdiagramsettings member_max_width 0 end
+  xyz 242 76 2000
+end
+classcanvas 128132 class_ref 135172 // ComponentWriter
+  classdiagramsettings member_max_width 0 end
+  xyz 29 73 2000
+end
+classcanvas 128260 class_ref 135300 // ClientWriter
+  classdiagramsettings member_max_width 0 end
+  xyz 61 21 2000
+end
+classcanvas 128644 class_ref 135428 // StreamConsoleWriter
+  classdiagramsettings member_max_width 0 end
+  xyz 10 128 2000
+end
+classcanvas 128772 class_ref 135556 // StreamBinaryFileWriter
+  classdiagramsettings member_max_width 0 end
+  xyz 7 179 2000
+end
+relationcanvas 128388 relation_ref 134660 // <aggregation>
+  from ref 128132 z 2001 to ref 128004
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128516 relation_ref 134788 // <unidirectional association>
+  from ref 128260 z 2001 to ref 128004
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 128900 relation_ref 134916 // <realization>
+  from ref 128644 z 2001 to ref 128004
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 129028 relation_ref 135044 // <realization>
+  from ref 128772 z 2001 to ref 128004
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

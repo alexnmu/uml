@@ -1,0 +1,37 @@
+format 224
+
+artifactcanvas 128004 artifact_ref 128004 // BaseData
+  xyz 338 142 2000
+end
+artifactcanvas 128132 artifact_ref 128132 // IntData
+  xyz 162 160 2000
+end
+artifactcanvas 128260 artifact_ref 128260 // DoubleData
+  xyz 485 177 2000
+end
+artifactcanvas 128388 artifact_ref 128516 // test_data
+  xyz 331 286 2000
+end
+artifactcanvas 128516 artifact_ref 128388 // main
+  xyz 340 216 2000
+end
+deploymentnodecanvas 129156 deploymentnode_ref 128004 // Server
+  xyzwh 131 92 2000 563 253
+end
+deploymentnodecanvas 130052 deploymentnode_ref 128132 // Remote Workstation
+  xyzwh 354 404 2000 117 32
+end
+simplerelationcanvas 128644 simplerelation_ref 128004
+  from ref 128132 z 2001 stereotype "<<from>>" xyz 284.5 173.5 3000 to ref 128004
+end
+simplerelationcanvas 128772 simplerelation_ref 128132
+  from ref 128260 z 2001 stereotype "<<from>>" xyz 445.5 182 3000 to ref 128004
+end
+simplerelationcanvas 128900 simplerelation_ref 128260
+  from ref 128516 z 2001 to ref 128004
+end
+containcanvas 129028
+  from ref 128388 z 2001 to ref 128516
+line 130564 ----
+  from ref 129156 z 2001 to ref 130052
+end
